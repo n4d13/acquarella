@@ -11,10 +11,6 @@
     <packaging>pom</packaging>
     <artifactId>acquarella-server</artifactId>
 
-    <modules>
-        <module>acquarella-server-domain</module>
-    </modules>
-
     <build>
         <plugins>
             <plugin>
