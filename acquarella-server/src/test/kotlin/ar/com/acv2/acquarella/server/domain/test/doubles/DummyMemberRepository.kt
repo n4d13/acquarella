@@ -17,11 +17,3 @@ internal class DummyMemberRepository(val membersList: MutableList<Member>) : Mem
         }
     }
 }
-
-/*
-
-Member(Id(membersList.size + 1), MemberCode("12345678901234567890123456789012"),
-                    NonEmptyString50("John Doe"), PastDate(LocalDate.now().minus(1, ChronoUnit.YEARS)),
-                    NonEmptyString15("1234567890"))
-
- */
