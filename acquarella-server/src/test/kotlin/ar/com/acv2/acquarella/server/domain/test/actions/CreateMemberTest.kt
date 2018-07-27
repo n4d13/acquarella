@@ -19,8 +19,7 @@ internal class CreateMemberTest: BehaviorSpec({
         val prototype = Member.Prototype(NonEmptyString50("John Doe"), PastDate(LocalDate.now().minus(1, ChronoUnit.YEARS)),
                 NonEmptyString15("1234567890"))
         When("use that prototype to build a member"){
-            val memberList = mutableListOf<Member>()
-            val member = CreateMember(DummyMemberRepository(memberList)).execute(prototype)
+            val member = CreateMember(DummyMemberRepository()).execute(prototype)
             Then("a valid member was created"){
                 member.isSuccess().shouldBeTrue()
                 member.map {
