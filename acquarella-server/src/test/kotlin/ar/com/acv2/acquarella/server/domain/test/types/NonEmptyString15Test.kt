@@ -1,5 +1,6 @@
-package ar.com.acv2.acquarella.server.domain.types
+package ar.com.acv2.acquarella.server.domain.test.types
 
+import ar.com.acv2.acquarella.server.domain.types.NonEmptyString15
 import io.kotlintest.shouldBe
 import io.kotlintest.shouldThrow
 import io.kotlintest.specs.BehaviorSpec
